@@ -1,0 +1,84 @@
+.scroll {
+	margin: 0;
+	padding: 0;
+
+	position: relative;
+
+	overflow: hidden;
+}
+
+.scroll-main {
+	margin: 0;
+	padding: 0;
+
+	height: 100%;
+
+	overflow-y: scroll;
+}
+
+.scroll-content {
+	margin: 0;
+	padding: 0;
+
+	position: relative;
+}
+
+.scroll-bar {
+	margin: 0;
+	padding: 0;
+
+	position: absolute;
+	width: 8px;
+	top: 4px;
+	right: 4px;
+	bottom: 4px;
+
+	cursor: pointer;
+	border-radius: 4px;
+
+	opacity: 0;
+	filter: alpha(opacity=0);
+
+	-webkit-transition: opacity .5s ease-in-out;
+	-moz-transition: opacity .5s ease-in-out;
+	-ms-transition: opacity .5s ease-in-out;
+	-o-transition: opacity .5s ease-in-out;
+	transition: opacity .5s ease-in-out;
+}
+
+.scroll:hover .scroll-bar {
+	opacity: 1;
+	filter: none;
+}
+
+.scroll-bar-handler {
+	margin: 0;
+	padding: 0;
+
+	position: absolute;
+	width: 100%;
+	top: 0;
+
+	max-height: 100%;
+
+	cursor: pointer;
+	border-radius: 4px;
+
+	filter: alpha(opacity=0);
+}
+
+.scroll:hover .scroll-bar-handler {
+	filter: none;
+}
+
+.scroll-resize {
+	margin: 0;
+	padding: 0;
+
+	position: absolute;
+	width: 1px;
+	height: 100%;
+	top: 0;
+	left: -8px;
+	border: 0;
+}
