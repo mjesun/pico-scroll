@@ -46,6 +46,11 @@ Scroll.prototype = {
 	_positionStart: 0,
 
 
+	calculate: function() {
+		this._calculate();
+	},
+
+
 	_bind: function(method) {
 		var that = this;
 
