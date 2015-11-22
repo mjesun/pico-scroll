@@ -121,6 +121,6 @@ Scroll.prototype = {
 
 
 	_preventDefault: function(evt) {
-		evt.preventDefault? evt.preventDefault() : evt.returnValue = false;
+		evt.preventDefault ? evt.preventDefault() : evt.returnValue = false;
 	}
 };
